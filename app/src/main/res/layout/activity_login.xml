@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y350"
+        android:src="@mipmap/logo"
+        android:scaleType="centerCrop"/>
+    <RelativeLayout
+        android:id="@+id/ll2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/x37"
+        android:layout_below="@+id/logo">
+
+        <RelativeLayout
+            android:id="@+id/layout_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y80"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/x100"
+                android:layout_height="@dimen/y100"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/yonghuming"/>
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x155"
+                android:hint="请输入手机号"
+                android:background="#00000000"/>
+        </RelativeLayout>
+        <View
+            android:id="@+id/view1"
+            android:layout_below="@id/layout_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y3"
+            android:background="@color/right_menu_unpressed"/>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_below="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y80"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_marginTop="8dp"
+                android:layout_width="@dimen/x100"
+                android:layout_height="@dimen/y100"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/yanzhengma"/>
+
+            <EditText
+                android:id="@+id/et_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x155"
+                android:hint="请输入短信验证码"
+                android:background="#00000000"/>
+
+            <ImageView
+                android:id="@+id/iv_yanzhengma"
+                android:layout_width="@dimen/x160"
+                android:layout_height="@dimen/y55"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/huoquyanzhengma"
+                android:layout_alignParentRight="true"/>
+            <RelativeLayout
+                android:id="@+id/daojishi"
+                android:layout_width="@dimen/x160"
+                android:layout_height="@dimen/y55"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/daojishi">
+                <TextView
+                    android:id="@+id/daojishi_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30s后"
+                    android:layout_marginLeft="@dimen/x15"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/loginText"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/daojishi"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/x12"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/relativeLayout2"
+            android:layout_below="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y80"
+            android:layout_marginTop="@dimen/y12">
+
+            <ImageView
+                android:layout_marginTop="@dimen/y21"
+                android:layout_width="@dimen/x100"
+                android:layout_height="@dimen/y100"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/mima"/>
+
+            <EditText
+                android:id="@+id/et_pwd2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x155"
+                android:hint="输入登录密码"
+                android:background="#00000000"/>
+
+            <ImageView
+                android:id="@+id/showmima"
+                android:layout_width="@dimen/x65"
+                android:layout_height="@dimen/y65"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/y60"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <View
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y3"
+            android:background="@color/right_menu_unpressed"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_login"
+        android:layout_below="@id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="@dimen/x370"
+            android:layout_height="@dimen/y70"
+            android:text="登录"
+            android:textSize="15sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/loginText"
+            android:background="@mipmap/denglu"/>
+
+        <TextView
+            android:layout_below="@+id/login"
+            android:id="@+id/tv_login_changgui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="使用常规登录方式"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/textButton"
+            android:layout_marginTop="@dimen/y13"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_below="@+id/layout_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="其他登录方式"
+        android:layout_marginTop="@dimen/y300"
+        android:textColor="@color/loginStyle"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/iv_dxlogin_WX"
+        android:layout_width="@dimen/x100"
+        android:layout_height="@dimen/y100"
+        android:layout_below="@+id/tv1"
+        android:layout_marginLeft="@dimen/x260"
+        android:layout_marginTop="@dimen/y30"
+        android:src="@mipmap/weixin" />
+    <ImageView
+        android:id="@+id/iv_dxlogin_QQ"
+        android:layout_width="@dimen/x100"
+        android:layout_height="@dimen/y100"
+        android:layout_below="@+id/tv1"
+        android:layout_marginLeft="@dimen/y400"
+        android:layout_marginTop="@dimen/y30"
+        android:src="@mipmap/qq" />
+
+
+</RelativeLayout>

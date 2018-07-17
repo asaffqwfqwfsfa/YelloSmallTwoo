@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal">
+<com.facebook.drawee.view.SimpleDraweeView
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:id="@+id/sdv_orderrv"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv1_orderrv"
+            android:textSize="18dp"
+            android:textColor="#000000"/>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv2_orderrv"
+        android:textSize="15dp"
+        android:textColor="#000000"/><TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/tv3_orderrv"
+    android:textSize="14dp"
+    android:textColor="#ffb84c"
+    />
+</LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv4_orderrv"
+            android:textSize="14dp"
+            android:textColor="#cfc7c7"/>
+    </LinearLayout>
+</LinearLayout>

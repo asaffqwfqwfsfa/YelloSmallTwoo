@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#fcdf04</color>
+    <color name="right_menu_unpressed">#EDEDED</color>
+    <color name="loginButton">#FFD200</color>
+    <color name="textButton">#FCE67F</color>
+    <color name="loginText">#fff</color>
+    <color name="daojishiBut">#C8C8C8</color>
+    <color name="loginStyle">#B6B6B6</color>
+    <color name="orange">#FD721D</color>
+    <color name="black">#030303</color>
+</resources>

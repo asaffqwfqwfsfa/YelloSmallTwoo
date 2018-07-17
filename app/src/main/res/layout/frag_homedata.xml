@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<com.youth.banner.Banner
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:id="@+id/bn"></com.youth.banner.Banner>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="----------热销----------"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="来看看大家都爱吃的是什么吧-"
+        android:textSize="12dp"
+        android:textAlignment="center"
+        android:textColor="#9b9797"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv"></android.support.v7.widget.RecyclerView>
+</LinearLayout>

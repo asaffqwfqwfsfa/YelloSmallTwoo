@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.john.yellosmalltwo.home.activity.SettingsActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@mipmap/background">
+        <ImageView
+            android:background="@mipmap/fanhui"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/iv_back2"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="编辑资料"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_touxiang"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/loginText">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="11dp"
+            android:gravity="center_vertical"
+            android:text="清除缓存"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_huancun"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="42dp"
+            android:gravity="center_vertical"
+            android:text="0MB"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+</LinearLayout>
